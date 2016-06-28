@@ -14,5 +14,3 @@ S = "${WORKDIR}/${SRCNAME}-${PV}"
 RDEPENDS_${PN} += "python3-core"
 
 inherit setuptools3
-
-BBCLASSEXTEND = "native"

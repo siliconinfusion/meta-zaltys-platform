@@ -12,10 +12,8 @@ SRC_URI[sha256sum] = "f690ce27f9bc203a2f70bbc0fb179b645fac33d8db71efde4d52be47d3
 
 S = "${WORKDIR}/${SRCNAME}-${PV}"
 
-RDEPENDS_${PN} += "python3-core"
+RDEPENDS_${PN} += "python3-core python3-threading python3-misc python3-requests python3-simplejson python3-six"
 
 inherit setuptools3
 
 FILES_${PN} += "${datadir}/cherrypy"
-
-BBCLASSEXTEND = "native"
