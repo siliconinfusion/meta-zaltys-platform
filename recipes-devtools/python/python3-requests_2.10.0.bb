@@ -1,7 +1,7 @@
 SUMMARY = "Python HTTP for Humans"
 HOMEPAGE = "http://python-requests.org"
 SECTION = "devel/python"
-LICENSE = "Apache2.0"
+LICENSE = "Apache-2.0"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=d9bb3515869c0f426cb8441c899ae7f5"
 DEPENDS = "python3-core"
 
