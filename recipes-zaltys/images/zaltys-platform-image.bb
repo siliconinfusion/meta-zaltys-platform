@@ -18,5 +18,8 @@ IMAGE_INSTALL += "python3-cherrypy"
 IMAGE_INSTALL += "python3-simplejson"
 IMAGE_INSTALL += "python3-requests"
 IMAGE_INSTALL += "python3-six"
+IMAGE_INSTALL += "libzaltys-zwire"
+IMAGE_INSTALL += "libzaltys-ad9361"
+IMAGE_INSTALL += "libzaltys-hdrmd"
 
 IMAGE_BASENAME = "zaltys-platform-image"
