@@ -12,4 +12,5 @@ do_install() {
     oe_runmake install PREFIX="${D}/usr"
 }
 
-FILES_${PN} += "${includedir}/*"
+PACKAGES = "${PN}-dbg ${PN}-staticdev ${PN} ${PN}-dev"
+FILES_${PN} += "${includedir}"
