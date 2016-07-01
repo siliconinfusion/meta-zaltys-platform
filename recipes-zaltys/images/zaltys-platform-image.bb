@@ -21,5 +21,6 @@ IMAGE_INSTALL += "python3-six"
 IMAGE_INSTALL += "libzaltys-zwire"
 IMAGE_INSTALL += "libzaltys-ad9361"
 IMAGE_INSTALL += "libzaltys-hdrmd"
+IMAGE_INSTALL += "zaltys-python-utils"
 
 IMAGE_BASENAME = "zaltys-platform-image"
