@@ -1,6 +1,6 @@
 SUMMARY = "Python utilities for the Zaltys platform."
 LICENSE = "Proprietary"
-PYTHON_MAJMIN = "3.3"
+PYTHON_MAJMIN = "3.4"
 
 SRC_URI = "git:///SiliconInfusion/software/zaltys/zaltys-python-utils.git"
 SRCREV = "master"

@@ -3,13 +3,23 @@
 
 DESCRIPTION = "Zaltys platform image."
 
-require recipes-fsl/images/fsl-image-gui.bb
+inherit core-image
 
-IMAGE_INSTALL += "linux-firmware-rtl8192cu"
-IMAGE_INSTALL += "dhcp-client"
+IMAGE_FEATURES += "splash x11-base hwcodecs"
+
+EXTRA_IMAGE_FEATURES += "tools-debug tools-profile ssh-server-dropbear"
+
+PACKAGE_ARCH = "${MACHINE_ARCH}"
+
+IMAGE_INSTALL += "xorg-minimal-fonts"
+IMAGE_INSTALL += "liberation-fonts"
 IMAGE_INSTALL += "packagegroup-core-buildessential"
 IMAGE_INSTALL += "packagegroup-xfce-base"
-IMAGE_INSTALL += "chromium"
+IMAGE_INSTALL += "linux-firmware-rtl8192cu"
+IMAGE_INSTALL += "dhcp-client"
+#IMAGE_INSTALL += "chromium"
+#IMAGE_INSTALL += "firefox"
+#IMAGE_INSTALL += "midori"
 IMAGE_INSTALL += "git"
 IMAGE_INSTALL += "python3-core"
 IMAGE_INSTALL += "python3-modules"

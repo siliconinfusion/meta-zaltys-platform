@@ -14,3 +14,4 @@ do_install() {
 
 PACKAGES = "${PN}-dbg ${PN}-staticdev ${PN} ${PN}-dev"
 FILES_${PN} += "${includedir}"
+FILES_${PN} += "${libdir}"
