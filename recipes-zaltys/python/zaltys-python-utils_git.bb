@@ -19,12 +19,16 @@ do_install() {
     install -d ${D}${bindir}
     install -d ${D}${libdir}/python${PYTHON_MAJMIN}
     install -d ${D}${datadir}/zaltys
+
     install -m 0755 zspiread  ${D}${bindir}
     install -m 0755 zspiwrite ${D}${bindir}
+
     install zaltys_zwire.py         ${D}${libdir}/python${PYTHON_MAJMIN}
     install zaltys_smpi_gateway.py  ${D}${libdir}/python${PYTHON_MAJMIN}
     install zaltys_ad9361_driver.py ${D}${libdir}/python${PYTHON_MAJMIN}
     install zaltys_hdrmd_driver.py  ${D}${libdir}/python${PYTHON_MAJMIN}
+    install zaltys_plsv_utils.py    ${D}${libdir}/python${PYTHON_MAJMIN}
+
     install zaltys_smpi_gateway_test.py  ${D}${datadir}/zaltys
     install zaltys_ad9361_driver_test.py ${D}${datadir}/zaltys
     install zaltys_hdrmd_driver_test.py  ${D}${datadir}/zaltys
