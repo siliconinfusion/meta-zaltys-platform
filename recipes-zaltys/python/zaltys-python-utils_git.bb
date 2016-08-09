@@ -2,7 +2,9 @@ SUMMARY = "Python utilities for the Zaltys platform."
 LICENSE = "MIT"
 PYTHON_MAJMIN = "3.5"
 
-SRC_URI = "git:///SiliconInfusion/software/zaltys/zaltys-python-utils.git"
+SILICON_INFUSION_OPEN_HOST ??= "git://github.com/siliconinfusion"
+
+SRC_URI = "${SILICON_INFUSION_OPEN_HOST}/zaltys-python-utils.git"
 SRCREV = "master"
 
 LIC_FILES_CHKSUM = "file://LICENCE;md5=9f99a6147d76cdf62362534311e782bc"
