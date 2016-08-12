@@ -34,6 +34,9 @@ do_install() {
     install zaltys_smpi_gateway_test.py  ${D}${datadir}/zaltys
     install zaltys_ad9361_driver_test.py ${D}${datadir}/zaltys
     install zaltys_hdrmd_driver_test.py  ${D}${datadir}/zaltys
+
+    install -m 0755 dvbs2_bbframe_test    ${D}${datadir}/zaltys
+    install -m 0755 dvbs2_continuous_test ${D}${datadir}/zaltys
 }
 
 FILES_${PN} += "${libdir}/python${PYTHON_MAJMIN}"
