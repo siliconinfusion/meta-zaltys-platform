@@ -1,5 +1,5 @@
 # Copyright (C) 2015 - 2016 Silicon Infusion Ltd
-# Released under the MIT license (see COPYING.MIT for the terms)
+# Released under an MIT license, see LICENCE file for details.
 
 DESCRIPTION = "Zaltys platform image."
 
@@ -20,7 +20,6 @@ IMAGE_INSTALL += "python3-requests"
 IMAGE_INSTALL += "python3-six"
 IMAGE_INSTALL += "libzaltys-zwire"
 IMAGE_INSTALL += "libzaltys-ad9361"
-IMAGE_INSTALL += "libzaltys-hdrmd"
 IMAGE_INSTALL += "zaltys-python-utils"
 
 IMAGE_BASENAME = "zaltys-platform-image"

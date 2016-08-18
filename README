@@ -1,4 +1,52 @@
-*** PLATFORM SUPPORT LAYER FOR SILICON INFUSION ZALTYS PRODUCTS ***
+***
+*** IMPORTANT NOTE: This is branch imx-3.14.28-1.0.0_ga of the
+*** meta-zaltys-platform layer.
+***
+*** This branch builds with the Freescale Release BSP, version
+*** imx-3.14.28-1.0.0_ga from Freescale Inc, (not the Freescale
+*** Community BSP).
+***
+*** Use the following command to initialize the build environment:-
+***
+***   repo init -u git://git.freescale.com/imx/fsl-arm-yocto-bsp.git -b imx-3.14.28-1.0.0_ga
+***
+
+
+PLATFORM SUPPORT LAYER FOR SILICON INFUSION ZALTYS PRODUCTS
+===========================================================
 
 Recipes to provide a baseline Linux environment across all Zaltys
 software platforms.
+
+Use this layer in conjunction with a board-support layer to build a
+Linux image for a Zaltys product (e.g. meta-zaltys-zmp003 for the
+Zaltys ZMP003 CPU board).
+
+BUILD SETUP
+-----------
+
+Add this layer to your YOCTO build configuration setup,
+<build-dir>/conf/bblayers.conf, with:-
+
+  BBLAYERS += " <layer-dir>/meta-zaltys-platform "
+
+where <layer-dir> is the fully qualified path to the directory which
+contains this layer definition.
+
+You may also want to set some standard YOCTO configuration variables
+in your local configuration file, <build-dir>/conf/local.conf, such
+as:-
+
+  IMAGE_ROOTFS_EXTRA_SPACE = "1048576"
+
+to add an extra 1GB of free space to the SDCARD image that will be
+built.
+
+To build an image issue the command:-
+
+  $ bitbake zaltys-platform-image
+
+
+--
+Silicon Infusion Ltd
+8 August 2016
