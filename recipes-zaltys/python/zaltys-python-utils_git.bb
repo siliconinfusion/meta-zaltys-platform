@@ -34,6 +34,7 @@ do_install() {
     install zaltys_hdrmm_driver.py  ${D}${libdir}/python${PYTHON2_MAJMIN}
     install zaltys_hdrmd_driver.py  ${D}${libdir}/python${PYTHON2_MAJMIN}
     install zaltys_plsv_utils.py    ${D}${libdir}/python${PYTHON2_MAJMIN}
+    install libgse_wrapper.py       ${D}${libdir}/python${PYTHON2_MAJMIN}
 
     install zaltys_zwire.py         ${D}${libdir}/python${PYTHON3_MAJMIN}
     install zaltys_smpi_gateway.py  ${D}${libdir}/python${PYTHON3_MAJMIN}
@@ -41,6 +42,7 @@ do_install() {
     install zaltys_hdrmm_driver.py  ${D}${libdir}/python${PYTHON3_MAJMIN}
     install zaltys_hdrmd_driver.py  ${D}${libdir}/python${PYTHON3_MAJMIN}
     install zaltys_plsv_utils.py    ${D}${libdir}/python${PYTHON3_MAJMIN}
+    install libgse_wrapper.py       ${D}${libdir}/python${PYTHON3_MAJMIN}
 
     install zaltys_smpi_gateway_test.py  ${D}${datadir}/zaltys
     install zaltys_ad9361_driver_test.py ${D}${datadir}/zaltys
