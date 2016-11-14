@@ -48,6 +48,7 @@ do_install() {
     install zaltys_ad9361_driver_test.py ${D}${datadir}/zaltys
     install zaltys_hdrmm_driver_test.py  ${D}${datadir}/zaltys
     install zaltys_hdrmd_driver_test.py  ${D}${datadir}/zaltys
+    install libgse_wrapper_test.py       ${D}${datadir}/zaltys
 
     install -m 0755 dvbs2_bbframe_test    ${D}${datadir}/zaltys
     install -m 0755 dvbs2_continuous_test ${D}${datadir}/zaltys
