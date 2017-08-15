@@ -28,6 +28,9 @@ do_install() {
     install -m 0755 zspiread  ${D}${bindir}
     install -m 0755 zspiwrite ${D}${bindir}
 
+    install -m 0755 zuartread  ${D}${bindir}
+    install -m 0755 zuartwrite ${D}${bindir}
+
     install zaltys_zwire.py         ${D}${libdir}/python${PYTHON2_MAJMIN}
     install zaltys_smpi_gateway.py  ${D}${libdir}/python${PYTHON2_MAJMIN}
     install zaltys_ad9361_driver.py ${D}${libdir}/python${PYTHON2_MAJMIN}
