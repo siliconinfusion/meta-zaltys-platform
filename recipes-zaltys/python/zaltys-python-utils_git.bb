@@ -31,28 +31,38 @@ do_install() {
     install -m 0755 zuartread  ${D}${bindir}
     install -m 0755 zuartwrite ${D}${bindir}
 
-    install zaltys_zwire.py         ${D}${libdir}/python${PYTHON2_MAJMIN}
-    install zaltys_smpi_gateway.py  ${D}${libdir}/python${PYTHON2_MAJMIN}
-    install zaltys_ad9361_driver.py ${D}${libdir}/python${PYTHON2_MAJMIN}
-    install zaltys_hdrmm_driver.py  ${D}${libdir}/python${PYTHON2_MAJMIN}
-    install zaltys_hdrmd_driver.py  ${D}${libdir}/python${PYTHON2_MAJMIN}
-    install zaltys_plsv_utils.py    ${D}${libdir}/python${PYTHON2_MAJMIN}
-    install libgse_wrapper.py       ${D}${libdir}/python${PYTHON2_MAJMIN}
+    install zaltys_zwire.py          ${D}${libdir}/python${PYTHON2_MAJMIN}
+    install zaltys_smpi_gateway.py   ${D}${libdir}/python${PYTHON2_MAJMIN}
+    install zaltys_ad9361_driver.py  ${D}${libdir}/python${PYTHON2_MAJMIN}
+    install zaltys_hdrmm_driver.py   ${D}${libdir}/python${PYTHON2_MAJMIN}
+    install zaltys_hdrmd_driver.py   ${D}${libdir}/python${PYTHON2_MAJMIN}
+    install zaltys_dvbs2m_driver.py  ${D}${libdir}/python${PYTHON2_MAJMIN}
+    install zaltys_dvbs2d_driver.py  ${D}${libdir}/python${PYTHON2_MAJMIN}
+    install zaltys_dvbs2fd_driver.py ${D}${libdir}/python${PYTHON2_MAJMIN}
+    install zaltys_plsv_utils.py     ${D}${libdir}/python${PYTHON2_MAJMIN}
+    install libgse_wrapper.py        ${D}${libdir}/python${PYTHON2_MAJMIN}
 
-    install zaltys_zwire.py         ${D}${libdir}/python${PYTHON3_MAJMIN}
-    install zaltys_smpi_gateway.py  ${D}${libdir}/python${PYTHON3_MAJMIN}
-    install zaltys_ad9361_driver.py ${D}${libdir}/python${PYTHON3_MAJMIN}
-    install zaltys_hdrmm_driver.py  ${D}${libdir}/python${PYTHON3_MAJMIN}
-    install zaltys_hdrmd_driver.py  ${D}${libdir}/python${PYTHON3_MAJMIN}
-    install zaltys_plsv_utils.py    ${D}${libdir}/python${PYTHON3_MAJMIN}
-    install libgse_wrapper.py       ${D}${libdir}/python${PYTHON3_MAJMIN}
+    install zaltys_zwire.py          ${D}${libdir}/python${PYTHON3_MAJMIN}
+    install zaltys_smpi_gateway.py   ${D}${libdir}/python${PYTHON3_MAJMIN}
+    install zaltys_ad9361_driver.py  ${D}${libdir}/python${PYTHON3_MAJMIN}
+    install zaltys_hdrmm_driver.py   ${D}${libdir}/python${PYTHON3_MAJMIN}
+    install zaltys_hdrmd_driver.py   ${D}${libdir}/python${PYTHON3_MAJMIN}
+    install zaltys_dvbs2m_driver.py  ${D}${libdir}/python${PYTHON3_MAJMIN}
+    install zaltys_dvbs2d_driver.py  ${D}${libdir}/python${PYTHON3_MAJMIN}
+    install zaltys_dvbs2fd_driver.py ${D}${libdir}/python${PYTHON3_MAJMIN}
+    install zaltys_plsv_utils.py     ${D}${libdir}/python${PYTHON3_MAJMIN}
+    install libgse_wrapper.py        ${D}${libdir}/python${PYTHON3_MAJMIN}
 
-    install zaltys_smpi_gateway_test.py  ${D}${datadir}/zaltys
-    install zaltys_ad9361_driver_test.py ${D}${datadir}/zaltys
-    install zaltys_hdrmm_driver_test.py  ${D}${datadir}/zaltys
-    install zaltys_hdrmd_driver_test.py  ${D}${datadir}/zaltys
-    install libgse_wrapper_test.py       ${D}${datadir}/zaltys
+    install zaltys_smpi_gateway_test.py   ${D}${datadir}/zaltys
+    install zaltys_ad9361_driver_test.py  ${D}${datadir}/zaltys
+    install zaltys_hdrmm_driver_test.py   ${D}${datadir}/zaltys
+    install zaltys_hdrmd_driver_test.py   ${D}${datadir}/zaltys
+    install zaltys_dvbs2m_driver_test.py  ${D}${datadir}/zaltys
+    install zaltys_dvbs2d_driver_test.py  ${D}${datadir}/zaltys
+    install zaltys_dvbs2fd_driver_test.py ${D}${datadir}/zaltys
+    install libgse_wrapper_test.py        ${D}${datadir}/zaltys
 
+    install -m 0755 dvbs2_setup_test      ${D}${datadir}/zaltys
     install -m 0755 dvbs2_bbframe_test    ${D}${datadir}/zaltys
     install -m 0755 dvbs2_continuous_test ${D}${datadir}/zaltys
 }
